@@ -1,0 +1,232 @@
+{
+	"info": {
+		"_postman_id": "6b59437c-caf8-42ad-960e-3f4e5c11655c",
+		"name": "Producto-Tienda",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "39557260"
+	},
+	"item": [
+		{
+			"name": "POST /producto-tiendas Valido",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "text"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/productos/12/tiendas/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"productos",
+						"12",
+						"tiendas",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST /productos-tiendas No valido",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/productos/11/tiendas/999",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"productos",
+						"11",
+						"tiendas",
+						"999"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET /productos-tiendas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/productos/11/tiendas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"productos",
+						"11",
+						"tiendas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET /productos-tiendas Valido",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/productos/11/tiendas/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"productos",
+						"11",
+						"tiendas",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET /productos-tiendas No Valido",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/productos/11/tiendas/999",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"productos",
+						"11",
+						"tiendas",
+						"999"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT /productos-tiendas Valido",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"storeIds\" : [1,2,3]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/productos/11/tiendas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"productos",
+						"11",
+						"tiendas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT /productos-tiendas No Valido",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"storeIds\" : [28,35]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/productos/11/tiendas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"productos",
+						"11",
+						"tiendas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE /productos-tienda valido",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/productos/11/tiendas/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"productos",
+						"11",
+						"tiendas",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE /productos-tienda No Valido",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/productos/11/tiendas/999",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"productos",
+						"11",
+						"tiendas",
+						"999"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
